@@ -73,3 +73,4 @@ export default defineConfig([
 ```
 # ReactSwarovski
 # ProjetoFinal2026
+# ProjetoFinal2026
