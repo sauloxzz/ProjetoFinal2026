@@ -1,0 +1,177 @@
+{
+  "users": [
+    {
+      "email": "swarovski@joias.com",
+      "senha": "1234"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Anel Idyllia Azul",
+      "categorias": [
+        "Idyllia",
+        "Anel",
+        "Flor",
+        "Azul"
+      ],
+      "descricao": "Anel Idyllia, Combinação de lapidações, Flor, Azul, Revestido em dourado.",
+      "imagens": [
+        "ANEL IDYLLIA-AZUL.png"
+      ],
+      "id": "p003",
+      "preco": 1000,
+      "parcelamento": "ou 10x de R$200,00 sem juros"
+    },
+    {
+      "nome": "Colar Idyllia Flor (Modelo 1)",
+      "categorias": [
+        "Idyllia",
+        "Colar",
+        "Flor",
+        "Multicor"
+      ],
+      "descricao": "Colar Idyllia, Combinação de lapidações, Flor, Multicor, Revestido em dourado.",
+      "imagens": [
+        "COLAR_IDYLLIA_1.png"
+      ],
+      "id": "p004",
+      "preco": 4000,
+      "parcelamento": "ou 10x de R$200,00 sem juros"
+    },
+    {
+      "nome": "Pingente Idyllia Florido Pavé",
+      "categorias": [
+        "Idyllia",
+        "Pingente",
+        "Pregadeira",
+        "Flor",
+        "Multicor",
+        "Pavé"
+      ],
+      "descricao": "Pingente e pregadeira Idyllia, Combinação de lapidações, Pavé, Flor, Multicores, Acabamento de combinação de metais.",
+      "imagens": [
+        "PINGENTE_IDYLLIA_FLORIDO.png"
+      ],
+      "id": "p005",
+      "preco": 3700,
+      "parcelamento": "ou 10x de R$200,00 sem juros"
+    },
+    {
+      "nome": "Bracelete Idyllia",
+      "categorias": [
+        "Idyllia",
+        "Bracelete",
+        "Flor",
+        "Multicor"
+      ],
+      "descricao": "Bracelete Idyllia, Combinação de lapidações, Flor, Multicor, Revestido em dourado.",
+      "imagens": [
+        "BACELETE_IDYLLIA.png"
+      ],
+      "id": "p006",
+      "preco": 1790,
+      "parcelamento": "ou 10x de R$200,00 sem juros"
+    },
+    {
+      "nome": "Anel Idyllia Verde",
+      "categorias": [
+        "Idyllia",
+        "Anel",
+        "Flor",
+        "Verde"
+      ],
+      "descricao": "Anel Idyllia, Combinação de lapidações, Flor, Verde, Revestido em dourado.",
+      "imagens": [
+        "ANEL_IDYLLIA_VERDE.png"
+      ],
+      "id": "p008",
+      "preco": 1980,
+      "parcelamento": "ou 10x de R$200,00 sem juros"
+    },
+    {
+      "nome": "colar dourado",
+      "categorias": [
+        "Colar",
+        "Dourado",
+        "Pedra",
+        "Rosa",
+        "Joias"
+      ],
+      "descricao": "Uma obra-prima artesanal, este colar dourado exala sofisticação atemporal. A delicada pedra rosa central captura a luz, conferindo um brilho inigualável a quem o veste.",
+      "imagens": [
+        "COLAR_DOURADO_PEDRA_ROSA.webp"
+      ],
+      "id": "p004",
+      "preco": 4500,
+      "parcelamento": "ou 12x de R$375,00 sem juros"
+    },
+    {
+      "nome": "Relogio azul",
+      "categorias": [
+        "relogio",
+        "Azul",
+        "Aço",
+        "Esportivo",
+        "Masculino"
+      ],
+      "descricao": "Este relógio suíço combina precisão técnica com um design arrojado em tom azul profundo. Perfeito para o homem que valoriza a funcionalidade de alta performance e o estilo marcante.",
+      "imagens": [
+        "RELOGIO_AZUL.webp"
+      ],
+      "id": "p005",
+      "preco": 8200,
+      "parcelamento": "ou 10x de R$820,00 sem juros"
+    },
+    {
+      "nome": "Relogio dourado",
+      "categorias": [
+        "relogios",
+        "Dourado",
+        "Clássico",
+        "Feminino",
+        "Luxo"
+      ],
+      "descricao": "Símbolo de opulência e bom gosto, este relógio totalmente dourado é uma peça de joalheria no pulso. Seus detalhes finos e acabamento espelhado o tornam um acessório indispensável para grandes ocasiões.",
+      "imagens": [
+        "RELOGIO_DOURADO.jpg"
+      ],
+      "id": "p006",
+      "preco": 12500,
+      "parcelamento": "ou 12x de R$1041,67 sem juros"
+    },
+    {
+      "nome": "relogio prata azul",
+      "categorias": [
+        "relogios",
+        "Prata",
+        "Azul",
+        "Cronógrafo",
+        "Casual"
+      ],
+      "descricao": "A elegância da prata encontra a modernidade de um mostrador azul hipnótico neste relógio versátil. Seu movimento de alta precisão garante pontualidade com um toque de sofisticação discreta e contemporânea.",
+      "imagens": [
+        "RELOGIO_PRATA_AZUL.jpg"
+      ],
+      "id": "p007",
+      "preco": 6800,
+      "parcelamento": "ou 8x de R$850,00 sem juros"
+    },
+    {
+      "nome": "Relogio prata cristal",
+      "categorias": [
+        "relogios",
+        "Prata",
+        "Cristal",
+        "Feminino",
+        "Elegante"
+      ],
+      "descricao": "Um verdadeiro espetáculo de brilho, este relógio em prata é adornado com cristais lapidados ao redor do aro. Eleva qualquer visual, marcando o tempo com um glamour que reflete a luz em todos os ângulos.",
+      "imagens": [
+        "RELOGIO_PRATA_CRISTAL.webp"
+      ],
+      "id": "p008",
+      "preco": 9450,
+      "parcelamento": "ou 10x de R$945,00 sem juros"
+    }
+  ]
+}

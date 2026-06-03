@@ -1,0 +1,156 @@
+/*CARDS*/
+
+
+.titulo_card_produto{
+  font-size: 25px;
+  margin: 5px;
+  color: var(--corFontEscura);
+}
+
+.cards_produto{
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: aqua;*/
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+  padding: 0 20px;
+  box-shadow: #00000050;
+  
+
+
+
+}
+
+.card_produto{
+  width: 380px;
+  height: 500px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+  position: relative;
+  margin-bottom: 50px;
+
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+  .card_joia{
+
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+    position: relative;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+.card_produto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  /* margin-bottom: 1rem; */
+}
+
+.card_produto p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+
+.card_produto span {
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  display: flex;
+  color: black;
+  margin: 1rem 0;
+}
+
+.card_produto small {
+  font-size: 0.8rem;
+  color: #777;
+  display: flex;
+}
+
+@media screen and (max-width:1300px){
+   
+  .card_produto{
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+    position: relative;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_produto img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    
+}
+
+}
+
+
+@media screen and (max-width: 768px) 
+{
+  /* CARDS*/
+  .cards_produto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+
+  }
+
+  
+  
+.card_produto img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+
+  .card_produto p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  .card_produto span {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0 3rem;
+    display: flex;
+  }
+
+  .card_produto small {
+    font-size: 0.8rem;
+    color: #777;
+    display: flex;
+  }
+
+  
+}

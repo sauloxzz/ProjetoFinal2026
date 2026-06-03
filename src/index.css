@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+:root {
+  --corHeader: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
+--corBackground:#F5F5F5;
+--corFontClara: #fff;
+--corFontEscura: #000;
+--fontComum: "Julius Sans One", sans-serif;
+}
