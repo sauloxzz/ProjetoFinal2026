@@ -263,7 +263,7 @@ export default function CadastroListagem() {
                     <section className="cards">
                         {
                             joia.map((item) => (
-                                <div className="card_joia">
+                                <div key={item.id} className="card_joia">
                                     <h3>{item.nome}</h3>
                                     <div className="descrição">
                                         Descrição
