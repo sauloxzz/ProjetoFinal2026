@@ -4,5 +4,5 @@ export interface CardProdutoProps {
   preco: number;
   imagem: string;
   id?: string;
-  parcelamento: string;
+  parcelamento?: string;
 }

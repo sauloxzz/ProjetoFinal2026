@@ -83,7 +83,8 @@ export default function Produtos() {
     useEffect(() => {
         fetchJoias();
         console.log("Termo pesquisado: ", termo_pesquisado);
-    }, [termo_pesquisado])
+        console.log("Categoria: ", categoria);
+    }, [termo_pesquisado, categoria])
 
 
 
@@ -136,7 +137,7 @@ export default function Produtos() {
                             descricao={j.descricao}
                             preco={j.preco ?? 0}
                             imagem={j.imagens[0] ?? ""}
-                            parcelamento={j.parcelamento} />
+                            parcelamento={j.parcelamento ?? ""} />
 
 
                     ))

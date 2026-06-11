@@ -282,4 +282,97 @@ body {
     .main_home {
         justify-content: center;
     }
+}
+
+/* Consultora Virtual Banner on Home */
+.card_consultora {
+    width: 100%;
+    max-width: 900px;
+    background: linear-gradient(135deg, #01476B 0%, #002537 100%);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.2s ease;
+}
+
+.card_consultora:hover {
+    transform: translateY(-2px);
+}
+
+.card_consultora_conteudo {
+    max-width: 65%;
+    text-align: left;
+}
+
+.card_consultora_conteudo h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card_consultora_conteudo p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+}
+
+.botao_consultora {
+    background-color: #ffffff;
+    color: #002537;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao_consultora:hover {
+    background-color: #f1f3ef;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+.botao_consultora:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+    .card_consultora {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+        margin-top: 30px;
     }
+
+    .card_consultora_conteudo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .card_consultora_conteudo h2 {
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .botao_consultora {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+}

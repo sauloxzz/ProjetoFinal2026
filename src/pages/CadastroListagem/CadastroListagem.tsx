@@ -21,11 +21,11 @@ export default function CadastroListagem() {
     const [parcelamento, setParcelamento] = useState<string | undefined>("");
     const [descricao, setDescricao] = useState<string>("");
 
-    const [clicouNaLixeira, setClicouNaLixeira] = useState<Boolean>(false);
+    const [clicouNaLixeira, setClicouNaLixeira] = useState<boolean>(false);
     const [idParaDeletar, setIdparadeletar] = useState<string>("");
     const [idParaEditar, setIdParaEditar] = useState<string>("");
     const [aposConfirmacaoDeJoiaRemovida, SetAposConfirmacaoDeJoiaRemovida] = useState<boolean>(false);
-    const [propsModalDeErroOuSucesso, setPropsModalDeErroOuSucesso] = useState<{ exibir: Boolean; titulo: String; corpo: String; }>({ exibir: false, titulo: "", corpo: "" });
+    const [propsModalDeErroOuSucesso, setPropsModalDeErroOuSucesso] = useState<{ exibir: boolean; titulo: string; corpo: string; }>({ exibir: false, titulo: "", corpo: "" });
 
     const topoRef = useRef<HTMLDivElement>(null);
 

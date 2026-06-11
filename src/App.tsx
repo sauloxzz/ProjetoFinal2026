@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home"
 import CadastroListagem from "./pages/CadastroListagem/CadastroListagem"
 import Login from "./pages/Login/Login"
 import RotaProtegida from "./components/RotaProtegida/RotaProtegida"
+import ConsultoraVirtual from "./pages/ConsultoraVirtual/ConsultoraVirtual"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           </RotaProtegida>
         } />
         <Route path="/produtos/pesquisa" element={<Produtos />} />
+        <Route path="/consultora" element={<ConsultoraVirtual />} />
       </Routes>
     </BrowserRouter>
 
