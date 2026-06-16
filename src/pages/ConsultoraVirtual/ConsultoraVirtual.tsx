@@ -39,23 +39,34 @@ export default function ConsultoraVirtual() {
     setResposta("");
 
     try {
-      // Tenta fazer a requisição para a API configurada
-      // Tenta na porta 5103 primeiro, e se falhar tenta na 3000
+      // Tenta fazer a requisição para a API configurada na porta 5103
+      // O endpoint /api/Consultoria da IA espera uma string JSON bruta no corpo
       let response;
       try {
-        response = await axios.post(`${API_BASE}/consultora`, { pergunta });
+        response = await axios.post(`${API_BASE}/Consultoria`, JSON.stringify(pergunta), {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        });
       } catch (err) {
-        console.warn("Falha ao conectar na porta 5103, tentando na porta 3000...");
+        console.warn("Falha ao conectar na porta 5103 (/api/Consultoria), tentando na porta 3000...", err);
+        // Fallback na porta 3000 (mock/json-server) que espera o objeto { pergunta }
         response = await axios.post("http://localhost:3000/api/consultora", { pergunta });
       }
 
-      if (response.data && response.data.resposta) {
-        setResposta(response.data.resposta);
+      if (response && response.data) {
+        if (typeof response.data === "string") {
+          setResposta(response.data);
+        } else if (response.data.resposta) {
+          setResposta(response.data.resposta);
+        } else {
+          throw new Error("Formato de resposta inesperado");
+        }
       } else {
-        throw new Error("Formato de resposta inesperado");
+        throw new Error("Resposta da API vazia");
       }
     } catch (error) {
-      console.warn("Erro ao conectar ao endpoint da API. Usando resposta simulada offline.", error);
+      console.warn("Erro ao conectar aos endpoints da API. Usando resposta simulada offline.", error);
       // Fallback offline caso a API não esteja rodando ou a rota falhe
       setTimeout(() => {
         const respostaSimulada = obterRespostaFallback(pergunta);

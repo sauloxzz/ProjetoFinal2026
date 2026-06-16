@@ -27,12 +27,12 @@ export const enviarFotoParaApi = async (file: File): Promise<string | undefined>
     formData.append("file", file);
 
     try {
-        const res = await axios.post(`${API_BASE}/upload`, formData, {
+        const res = await axios.post(`${API_BASE}/Upload`, formData, {
             headers: { "Content-type": "multipart/form-data" }
         });
-        return res.data.filename;
+        return res.data.caminhoImagem || res.data.filename;
     } catch (error) {
-        console.error("Erro no uploade da imagem", error);
+        console.error("Erro no upload da imagem", error);
         return undefined;
     }
 };
