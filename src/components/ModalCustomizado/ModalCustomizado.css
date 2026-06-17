@@ -1,19 +1,76 @@
+/* MODAL CUSTOMIZADO LUXURY DESIGN */
+
+.custom-luxury-modal .modal-content {
+  border-radius: 20px;
+  border: 1px solid var(--sw-border);
+  background-color: var(--sw-white);
+  box-shadow: 0 15px 40px rgba(0, 37, 55, 0.12);
+  padding: 15px;
+}
+
+.custom-luxury-modal .modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 12px;
+}
+
+.custom-luxury-modal .modal-title {
+  font-family: var(--font-heading);
+  color: var(--sw-navy);
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.custom-luxury-modal .modal-body {
+  color: var(--sw-dark);
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+.custom-luxury-modal .modal-footer {
+  border-top: none;
+  padding-top: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
 .botaoModalCancelar {
-    padding: 10px 10px;
-    border-radius: 10px;
-    background-color: var(--corBackground);
-    font-size: 24px;
-    font-family: var(--fontComplementar);
-    box-shadow: 0 4px 4px 0 #00000025;
-    cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--sw-platinum);
+  border: 1px solid var(--sw-border-light);
+  color: var(--sw-navy);
+  font-size: 13px;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botaoModalCancelar:hover {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
 }
 
 .botaoSubmitModal {
-    padding: 10px 100px;
-    border-radius: 10px;
-    background-color: var(--corPrincipal);
-    font-size: 24px;
-    font-family: var(--fontComplementar);
-    box-shadow: 0 4px 4px 0 #00000025;
-    cursor: pointer;
+  padding: 12px 30px;
+  border-radius: 8px;
+  background-color: var(--sw-navy);
+  border: 1px solid var(--sw-navy);
+  color: var(--sw-white);
+  font-size: 13px;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.botaoSubmitModal:hover {
+  background-color: var(--sw-gold);
+  border-color: var(--sw-gold);
+  box-shadow: 0 4px 12px rgba(197, 168, 128, 0.25);
+}

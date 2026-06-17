@@ -1,32 +1,37 @@
-/* RODAPE */
+/* FOOTER LUXURY STYLING */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150px;
-
-    background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 45px 20px;
+  background: var(--sw-navy-deep);
+  border-top: 1px solid var(--sw-border);
+  position: relative;
 }
 
 footer .logo {
-    height: 40px;
+  height: 25px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+footer .logo path {
+  fill: var(--sw-white) !important;
+}
 
-@media screen and (max-width: 768px) 
-  {/* FOOTER*/
+footer .logo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
 
+@media screen and (max-width: 768px) {
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 110px;
+    padding: 30px 15px;
   }
 
   footer .logo {
-    height: 25px;
+    height: 18px;
+  }
+}
 
-  }}

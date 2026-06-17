@@ -1,9 +1,94 @@
-body {
-  font-family: var(--fontComplementar);
-  background-color: var(--corBackground);
+/* LOGIN LUXURY THEME */
+
+.min-vh-100 {
+  min-height: 85vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sw-bg);
 }
 
 .card {
-  max-width: 500px;
-  margin: 0 1rem;
+  max-width: 420px !important;
+  width: 90% !important;
+  background-color: var(--sw-white);
+  border: 1px solid var(--sw-border-light) !important;
+  border-radius: 20px !important;
+  padding: 40px !important;
+  box-shadow: 0 15px 40px rgba(0, 37, 55, 0.04) !important;
+  margin: 0 auto;
 }
+
+.card h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sw-navy);
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+.form-group label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--sw-navy);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  border-radius: 8px !important;
+  border: 1px solid var(--sw-border-light) !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  font-family: var(--font-sans) !important;
+  background-color: var(--sw-bg) !important;
+  color: var(--sw-dark) !important;
+  transition: all 0.3s ease !important;
+  outline: none;
+}
+
+.form-control:focus {
+  background-color: var(--sw-white) !important;
+  border-color: var(--sw-gold) !important;
+  box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.25) !important;
+}
+
+.alert-danger {
+  border-radius: 8px !important;
+  font-size: 13px !important;
+  padding: 10px 15px !important;
+  font-family: var(--font-sans) !important;
+  border: 1px solid rgba(255, 107, 107, 0.2) !important;
+  background-color: rgba(255, 107, 107, 0.08) !important;
+  color: #ff6b6b !important;
+  text-align: center;
+}
+
+.botaoSubmit {
+  height: 48px;
+  background-color: var(--sw-navy);
+  color: var(--sw-white);
+  border: 1px solid var(--sw-navy);
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.botaoSubmit:hover {
+  background-color: var(--sw-gold);
+  border-color: var(--sw-gold);
+  color: var(--sw-navy-deep);
+  box-shadow: 0 4px 15px rgba(197, 168, 128, 0.25);
+  transform: translateY(-1px);
+}

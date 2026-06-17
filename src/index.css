@@ -1,14 +1,76 @@
+:root {
+  /* Cores de Luxo Swarovski */
+  --sw-navy-deep: #00121e;
+  --sw-navy: #002537;
+  --sw-navy-light: #01476B;
+  --sw-gold: #c5a880; /* Dourado Champagne fosco, muito mais elegante que dourado vivo */
+  --sw-gold-light: #e3d4c1;
+  --sw-platinum: #f4f6f8;
+  --sw-border: rgba(197, 168, 128, 0.3); /* borda dourada translúcida */
+  --sw-border-light: #e2e8f0;
+  --sw-white: #ffffff;
+  --sw-dark: #121c24;
+  --sw-text-muted: #64748b;
+  --sw-bg: #f8fafc;
+  
+  /* Fontes */
+  --font-heading: "Julius Sans One", sans-serif;
+  --font-serif: "Cinzel", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-alt: "Kaisei Tokumin", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: var(--font-sans);
 }
 
-:root {
-  --corHeader: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
---corBackground:#F5F5F5;
---corFontClara: #fff;
---corFontEscura: #000;
---fontComum: "Julius Sans One", sans-serif;
+body {
+  background-color: var(--sw-bg);
+  color: var(--sw-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* Scrollbar Customizada Elegante */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sw-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sw-navy-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sw-gold);
+}
+
+/* Seleção elegante */
+::selection {
+  background-color: var(--sw-gold-light);
+  color: var(--sw-navy-deep);
+}
+
+/* Estilos de Botão do Bootstrap Globais Sobrescritos */
+.btn-primary {
+  background-color: var(--sw-navy);
+  border-color: var(--sw-navy);
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: var(--sw-gold);
+  border-color: var(--sw-gold);
+}

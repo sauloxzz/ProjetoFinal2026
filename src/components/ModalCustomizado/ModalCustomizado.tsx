@@ -9,7 +9,8 @@ export default function ModalCustomizado({ mostrarModalQuando, aoCancelar,
 ) {
   return (
     <Modal
-      style={{ fontFamily: "Bellota, system-ui" }}
+      className="custom-luxury-modal"
+      style={{ fontFamily: "var(--font-sans)" }}
       show={mostrarModalQuando}
       onHide={aoCancelar}
       centered={exibirConteudoCentralizado}

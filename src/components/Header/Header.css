@@ -1,138 +1,154 @@
-/* HEADER */
-
+/* HEADER LUXURY STYLING */
 
 header {
-    justify-items: center;
-    height: 200px;
-    background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 90px;
+  background: rgba(0, 37, 55, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--sw-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
-
-
-
-
 
 .container_cabeçalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    /* background-color: aqua; */
-
-
-    max-width: 1440px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-
-
-
-.menu_hamburguer {
-    width: 60px;
-    cursor: pointer;
-    color: white;
-
-    margin-left: 15px;
-}
-
-
-.seta_cadastro {
-    width: 40px;
-    cursor: pointer;
-
-
-    margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header .logo {
-    height: 45px;
-    cursor: pointer;
-    justify-self: center;
+  height: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+header .logo path {
+  fill: var(--sw-white) !important;
+  transition: fill 0.3s ease;
+}
+
+header .logo:hover path {
+  fill: var(--sw-gold) !important;
 }
 
 .container_cabeçalho img {
-    height: 160px;
-
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
-.logo_header {
-    height: 60px;
-    cursor: pointer;
+.container_cabeçalho img:hover {
+  transform: scale(1.08) rotate(2deg);
 }
 
+.menu_hamburguer {
+  width: 30px;
+  cursor: pointer;
+  color: var(--sw-white);
+  transition: color 0.3s ease, transform 0.2s ease;
+  margin-left: 0;
+}
+
+.menu_hamburguer:hover {
+  color: var(--sw-gold);
+  transform: scale(1.1);
+}
+
+.seta_cadastro {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.seta_cadastro:hover {
+  transform: translateX(-3px);
+}
 
 .botoes_direita {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0;
 }
 
-.botoes_direita button{
-    background-color: transparent;
-    border: none;
+.botoes_direita button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add {
-    color: white;
-    cursor: pointer;
-    width: 35px;
+  color: var(--sw-white);
+  cursor: pointer;
+  width: 26px;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
+.add:hover {
+  color: var(--sw-gold);
+  transform: scale(1.15) rotate(90deg);
+}
 
 .logout {
-    color: white;
-    cursor: pointer;
-    width: 50px;
-    fill: transparent;
+  color: var(--sw-white);
+  cursor: pointer;
+  width: 28px;
+  fill: transparent;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-
-
-
-@media screen and (max-width:770px) {
-    /* HEADER MEDIA */
-
-
-
-    header {
-        height: 130px;
-    }
-
-    header .logo {
-        height: 30px;
-    }
-
-    .container_cabeçalho img {
-        height: 100px;
-    }
-
-    .menu_hamburguer {
-        width: 40px;
-
-    }
+.logout:hover {
+  color: #ff6b6b;
+  transform: scale(1.15);
 }
 
-@media screen and (max-width:500px) {
-    /* HEADER MEDIA */
+/* MEDIA QUERIES */
 
-    header .logo {
-        height: 20px;
-    }
+@media screen and (max-width: 768px) {
+  header {
+    height: 75px;
+  }
 
-    .container_cabeçalho img {
-        height: 80px;
-    }
+  header .logo {
+    height: 18px;
+  }
 
-    /* img {
+  .container_cabeçalho img {
+    height: 55px;
+  }
 
-        height: 150px;
-    } */
+  .menu_hamburguer {
+    width: 26px;
+  }
 
-    .logo {
+  .add {
+    width: 22px;
+  }
 
-        height: 100px;
-    }
+  .logout {
+    width: 24px;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  header .logo {
+    display: none; /* Oculta a logo texto em telas muito pequenas para focar no cisne e botões */
+  }
+  
+  .container_cabeçalho {
+    width: 92%;
+  }
+}
